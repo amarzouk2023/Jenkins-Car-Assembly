@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                //echo 'Hello World'
-                bat  'rd /s /q  build'
+                echo 'Hello World'
+             //   bat  'rd /s /q  build'
                 bat  'mkdir build'
                 bat 'copy nul "build/car.txt"'
                 bat 'echo "chassis" >> build/car.txt'
